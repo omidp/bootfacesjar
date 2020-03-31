@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>#{home.hello}</title>
+</h:head>
+
+<h:body>
+    <p:panel id="horizontal" header="Horizontal Toggle" toggleable="true" toggleOrientation="horizontal">
+        <h:panelGrid columns="2" cellpadding="10">
+            
+
+            <h:outputText value="#{home.hello}" />
+        </h:panelGrid>
+        <p:link href="/home" value="Go To Home"></p:link>
+        <h:form>
+        	<p:commandButton value="Submit" action="#{home.save()}"></p:commandButton>
+        </h:form>
+    </p:panel>
+
+</h:body>
+</html>
